@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Simple HTML Form</title>
+	<style type="text/css">
+	label {
+		font-weight: bold;
+		color: #300ACC;
+	}
+	</style>
+</head>
+<body>
+<!-- Script 2.1 - form.html -->
+
+<form action="handle_form.php" method="post">
+
+	<fieldset><legend>Enter your information in the form below:</legend>
+
+	<p><label>Last Name: <input type="text" name="lName" size="20" maxlength="40"></label></p>
+	
+	<p><label>First Name: <input type="text" name="fName" size="20" maxlength="40"></label></p>
+	
+	<p><label>Email Address: <input type="email" name="email" size="40" maxlength="60"></label></p>
+
+	<p><label>State:
+	<select name="state">
+		<option value="1">Alabama</option>
+		<option value="2">Florida</option>
+		<option value="3">georgia</option>
+		<option value="3">Mississippi</option>
+		<option value="3">South Carolina</option>
+	</select></label></p>
+
+	<p><label>Comments: <textarea name="comments" rows="3" cols="40"></textarea></label></p>
+
+	</fieldset>
+
+	<p align="center"><input type="submit" name="submit" value="Submit My Information"></p>
+
+</form>
+
+</body>
+</html>
